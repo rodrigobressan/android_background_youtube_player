@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.example.rodrigobresan.awesomeplayer.R;
+import com.example.rodrigobresan.awesomeplayer.callback.VideoControlCallback;
 
 /**
  * Created by Rodrigo Bresan on 08/10/2015.
@@ -17,12 +18,8 @@ public class LyricsFragment extends Fragment {
 
     private boolean isVideoPlaying;
 
-    private ButtonClicked mCallback;
+    private VideoControlCallback mCallback;
 
-    public interface ButtonClicked{
-        void pauseVideo();
-        void continueVideo();
-    }
 
     /*
      * When the fragment is attached we must also assign our callback to play/pause the video
@@ -31,7 +28,7 @@ public class LyricsFragment extends Fragment {
     public void onAttach(Context context) {
         super.onAttach(context);
         try {
-            mCallback = (ButtonClicked) context;
+            mCallback = (VideoControlCallback) context;
         } catch (ClassCastException e) {
             throw new ClassCastException(context.toString() + " must implement ButtonClicked");
         }
@@ -64,12 +61,10 @@ public class LyricsFragment extends Fragment {
             public void onClick(View v) {
                 if (isVideoPlaying) {
                     btnVideoControl.setText(R.string.text_continue_video);
-                    //((MainActivity) getActivity()).pauseVideo();
                     mCallback.pauseVideo();
                     isVideoPlaying = false;
                 } else {
                     btnVideoControl.setText(R.string.text_pause_video);
-                    //((MainActivity) getActivity()).continueVideo();
                     mCallback.continueVideo();
                     isVideoPlaying = true;
                 }

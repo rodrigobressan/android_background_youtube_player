@@ -19,11 +19,12 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
 import com.example.rodrigobresan.awesomeplayer.R;
+import com.example.rodrigobresan.awesomeplayer.callback.VideoControlCallback;
 import com.example.rodrigobresan.awesomeplayer.fragment.LyricsFragment;
 import com.example.rodrigobresan.awesomeplayer.fragment.VideoFragment;
 
 @TargetApi(Build.VERSION_CODES.HONEYCOMB)
-public class MainActivity extends AppCompatActivity implements LyricsFragment.ButtonClicked {
+public class MainActivity extends AppCompatActivity implements VideoControlCallback {
 
     private static final String TAG_VIDEO_FRAGMENT = "VideoFragment";
     private static final String TAG_LYRICS_FRAGMENT = "LyricsFragment";
