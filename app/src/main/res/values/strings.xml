@@ -1,0 +1,24 @@
+<resources>
+    <!-- Application name -->
+    <string name="app_name">BresanPlayer</string>
+
+    <!-- Drawer menu texts -->
+    <string name="drawer_open">Abrir menu</string>
+    <string name="drawer_close">Fechar menu</string>
+
+    <!-- DRM Errors message -->
+    <string name="drm_error_not_supported">Protected content not supported on API levels below 18</string>
+    <string name="drm_error_unsupported_scheme">This device does not support the required DRM scheme</string>
+    <string name="drm_error_unknown">An unknown DRM error occurred</string>
+
+    <!-- Dash link to video -->
+    <string name="video_dash_url">https://manifest.googlevideo.com/api/manifest/dash/ms/au/mt/1444414515/mv/m/sparams/as,hfr,id,ip,ipbits,itag,mm,mn,ms,mv,pl,playback_host,requiressl,source,expire/ip/179.159.52.218/id/o-AKIEht6eCiqmJq-e3tCTbs0sJzhZ3bn7PNePtDPYkhuH/mm/31/mn/sn-oxunxg8pjvn-jfce/source/youtube/upn/5wBEQTIh_ME/itag/0/as/fmp4_audio_clear,webm_audio_clear,fmp4_sd_hd_clear,webm_sd_hd_clear,webm2_sd_hd_clear/pl/22/hfr/1/expire/1444436165/playback_host/r2---sn-oxunxg8pjvn-jfce.googlevideo.com/sver/3/ipbits/0/key/yt6/requiressl/yes/signature/241DB7FC287032D316A5CF8DACD114E8518486B8.905DCD51A4716D39EBED9776EA35EB13A2BD0D94/fexp/9405998,9407118,9408211,9408710,9409069,9414602,9414764,9415365,9415436,9415485,9415943,9416023,9416126,9416485,9417367,9417707,9418184,9418448,9418612,9420348,9420438,9420842,9421013,9421352,9421744,9422062,9422300,9422400</string>
+    <!-- Lyrics to be displayed -->
+    <string name="lyrics_sample">Hey, Jude, don\'t make it bad,\nTake a sad song and make it better\nRemember to let her into your heart,\nThen you can start to make it better.\n\nHey, Jude, don\'t be afraid,\nYou were made to go out and get her,\nThe minute you let her under your skin,\nThen you begin to make it better.\n\nAnd anytime you feel the pain,\nHey, Jude, refrain,\nDon\'t carry the world\nUpon your shoulders.\n\nWell you know that it\'s a fool,\nWho plays it cool,\nBy making his world a little colder.\nNa na na na na na na na na.\n\nHey, Jude, don\'t let me down,\nYou have found her now go and get her,\nRemember to let her into your heart,\nThen you can start to make it better.\n\nSo let it out and let it in,\nHey, Jude, begin,\nYou\'re waiting for someone to perform with.\nAnd don\'t you know that is just you?\n\nHey, Jude, you\'ll do,\nThe movement you need\nIs on your shoulder.\nNa na na na na na na na na.\n\nHey, Jude, don\'t make it bad,\nTake a sad song and make it better,\nRemember to let her under your skin,\nThen you\'ll begin to make it better.\n\nBetter, Better, Better, Better, Better.\n\nNa, na, na, na na na na, na na na na, Hey Jude.\nNa, na, na, na na na na, na na na na, Hey Jude.\nNa, na, na, na na na na, na na na na, Hey Jude.\nNa, na, na, na na na na, na na na na, Hey Jude.\nNa, na, na, na na na na, na na na na, Hey Jude.</string>
+
+    <!-- Video controls text -->
+    <string name="text_continue_video">Continuar vídeo</string>
+    <string name="text_pause_video">Pausar vídeo</string>
+    <string name="drawer_video_item">Video</string>
+    <string name="drawer_lyrics_item">Letra</string>
+</resources>

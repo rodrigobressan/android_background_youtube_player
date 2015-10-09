@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/small_margin"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_centerVertical="true"
+        android:id="@+id/frameVideo"
+        android:focusable="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/video_height"
+        android:keepScreenOn="true">
+
+        <SurfaceView
+            android:id="@+id/surfaceViewVideo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+</RelativeLayout>
+

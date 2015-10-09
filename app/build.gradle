@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "com.example.rodrigobresan.awesomeplayer"
+        minSdkVersion 10  // minSdkVersion to 10 (Android 2.3.3 - Gingerbread)
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    // app compat v7 dependencies
+    compile 'com.android.support:appcompat-v7:23.0.1'
+    compile 'com.android.support:appcompat-v7:23.0.0'
+
+    // design animations dependency
+    compile 'com.android.support:design:23.0.0'
+
+    // exoplayer dependency
+    compile 'com.google.android.exoplayer:exoplayer:r1.5.0'
+
+    // okhttp requests
+    compile 'com.squareup.okhttp:okhttp:2.4.0'
+}
