@@ -59,7 +59,11 @@ public class VideoFragment extends Fragment implements SurfaceHolder.Callback, D
         // set a few data that will be used to display the video
         this.contentId = "Video";
 
-        String videoUrl = getResources().getString(R.string.video_dash_url);
+        //String videoUrl = getResources().getString(R.string.video_dash_url);
+        String videoUrl = "http://www.youtube.com/api/manifest/dash/id/bf5bb2419360daf1/source/youtube?"
+                + "as=fmp4_audio_clear,fmp4_sd_hd_clear&sparams=ip,ipbits,expire,source,id,as&ip=0.0.0.0&"
+                + "ipbits=0&expire=19000000000&signature=51AF5F39AB0CEC3E5497CD9C900EBFEAECCCB5C7."
+                + "8506521BFC350652163895D4C26DEE124209AA9E&key=ik0";
 
         contentUri = Uri.parse(videoUrl);
 
